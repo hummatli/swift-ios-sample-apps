@@ -415,6 +415,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AJ4LU8WZ2B;
 				INFOPLIST_FILE = "HellooooWorld-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mobapphome.HellooooWorld-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -428,6 +429,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AJ4LU8WZ2B;
 				INFOPLIST_FILE = "HellooooWorld-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "mobapphome.HellooooWorld-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -508,6 +510,7 @@
 				757F2F981E5F3F1E002478DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		757F2F991E5F3F1E002478DF /* Build configuration list for PBXNativeTarget "HellooooWorld-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +519,7 @@
 				757F2F9B1E5F3F1E002478DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		757F2F9C1E5F3F1E002478DF /* Build configuration list for PBXNativeTarget "HellooooWorld-iOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +528,7 @@
 				757F2F9E1E5F3F1E002478DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
