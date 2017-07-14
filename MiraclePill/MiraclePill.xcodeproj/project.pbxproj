@@ -420,7 +420,7 @@
 				DEVELOPMENT_TEAM = AJ4LU8WZ2B;
 				INFOPLIST_FILE = MiraclePill/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hummatli.MiraclePill;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hummatli.MiraclePill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -433,7 +433,7 @@
 				DEVELOPMENT_TEAM = AJ4LU8WZ2B;
 				INFOPLIST_FILE = MiraclePill/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = hummatli.MiraclePill;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hummatli.MiraclePill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -516,6 +516,7 @@
 				75E44F4C1F18B94300AC1544 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75E44F4D1F18B94300AC1544 /* Build configuration list for PBXNativeTarget "MiraclePillTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +525,7 @@
 				75E44F4F1F18B94300AC1544 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75E44F501F18B94300AC1544 /* Build configuration list for PBXNativeTarget "MiraclePillUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +534,7 @@
 				75E44F521F18B94300AC1544 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
