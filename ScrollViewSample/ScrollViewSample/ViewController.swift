@@ -44,6 +44,9 @@ class ViewController: UIViewController {
         scrollView.clipsToBounds = false
         scrollView.contentSize = CGSize(width: contentWidth, height: view.frame.height)
         
+        //This was a task and I found in stackoverflow
+        view.addGestureRecognizer(scrollView.panGestureRecognizer)
+        
         print("Images count: \(images.count)")
     }
 
