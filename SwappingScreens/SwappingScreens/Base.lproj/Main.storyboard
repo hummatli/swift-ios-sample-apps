@@ -91,17 +91,70 @@
                                     <action selector="btnBackPressed:" destination="zIt-Ho-o44" eventType="touchUpInside" id="FBm-VL-5Sq"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eer-If-DcQ">
+                                <rect key="frame" x="129" y="318" width="117" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="OnU-ph-yJl"/>
+                                    <constraint firstAttribute="width" constant="117" id="mDF-iz-i21"/>
+                                </constraints>
+                                <state key="normal" title="Load 3rd Screen "/>
+                                <connections>
+                                    <action selector="load3rdScreenPressed:" destination="zIt-Ho-o44" eventType="touchUpInside" id="2ht-wj-WZA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="eer-If-DcQ" firstAttribute="centerX" secondItem="pew-tw-uaB" secondAttribute="centerX" id="1K9-2f-zkQ"/>
                             <constraint firstItem="Fm1-3F-Bo5" firstAttribute="leading" secondItem="pew-tw-uaB" secondAttribute="leadingMargin" id="9fz-sK-z3u"/>
                             <constraint firstItem="Fm1-3F-Bo5" firstAttribute="top" secondItem="q44-uA-MTW" secondAttribute="bottom" id="ArC-YS-TO5"/>
+                            <constraint firstItem="eer-If-DcQ" firstAttribute="centerY" secondItem="pew-tw-uaB" secondAttribute="centerY" id="v1Z-ZT-aDq"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="kYc-3Q-fQu" kind="showDetail" identifier="seguePlaySongVC" id="Mpq-sG-eiI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bHz-VP-C11" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="806" y="86"/>
+        </scene>
+        <!--Play SongVC-->
+        <scene sceneID="HdW-7v-QFL">
+            <objects>
+                <viewController id="kYc-3Q-fQu" customClass="PlaySongVC" customModule="SwappingScreens" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j76-9W-Qqf"/>
+                        <viewControllerLayoutGuide type="bottom" id="TEt-2h-5Jt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gis-Po-w0Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFa-Oe-OoJ">
+                                <rect key="frame" x="149" y="65" width="77.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77.5" id="2Td-RW-HiR"/>
+                                    <constraint firstAttribute="height" constant="21" id="gcd-YH-kUL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fFa-Oe-OoJ" firstAttribute="centerX" secondItem="gis-Po-w0Y" secondAttribute="centerX" id="Zr3-L2-pl1"/>
+                            <constraint firstItem="fFa-Oe-OoJ" firstAttribute="top" secondItem="j76-9W-Qqf" secondAttribute="bottom" constant="45" id="dbi-V0-Eb1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lblSongTitle" destination="fFa-Oe-OoJ" id="GzJ-hH-st4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ttI-HY-mCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1565.5999999999999" y="85.907046476761622"/>
         </scene>
     </scenes>
 </document>
