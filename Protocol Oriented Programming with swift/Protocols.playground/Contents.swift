@@ -98,6 +98,15 @@ for v in vehicleArray {
 
 
 
+extension Double {
+    var dollarString :String {
+        return String(format: "$%.02f", self)
+    }
+}
+
+var pct = 32.15 * 0.15
+pct.dollarString
+
 
 
 
