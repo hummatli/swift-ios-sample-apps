@@ -4,43 +4,49 @@ import UIKit
 
 protocol Vehicle: CustomStringConvertible {
     var isRunning: Bool { get set }
+    var make: String { get set}
+    var model: String { get set}
     
     mutating func start()
     mutating func turnOff()
 }
 
 
-struct SportsCar: Vehicle {
-    var isRunning: Bool = false
-    var description: String {
-        if isRunning {
-            return "Sports car currently running"
-        } else {
-            return "Sports car currently turned off"
-        }
+extension Vehicle {
+    
+    var makeModel: String {
+        return "\(make) \(model)"
     }
     
     mutating func start() {
-        
         if isRunning {
             print("Already started!")
         } else {
             isRunning = true
-            print("Vroom")
+            print("\(description) fired up!")
         }
     }
     
     mutating func turnOff() {
-        
         if isRunning {
-            
             isRunning = false
-            print("Crickets!")
+            print("\(description) Crickets!")
         } else {
-            
-            print("Already dead!")
+            print(" \(description) Already dead!")
         }
     }
+    
+}
+
+struct SportsCar: Vehicle {
+    var isRunning: Bool = false
+    var description: String {
+        return makeModel
+    }
+    
+    var make: String
+    var model: String
+
 }
 
 
@@ -49,33 +55,17 @@ class SemiTruck: Vehicle {
     var isRunning: Bool = false
     
     var description: String {
-        if isRunning {
-            return "Semi truck currently running"
-        } else {
-            return "Semi truck currently turned off"
-        }
+        return makeModel
     }
     
-    func start() {
-        
-        if isRunning {
-            print("Already started!")
-        } else {
-            isRunning = true
-            print("Rumble")
-        }
-    }
+    var make: String
+    var model: String
     
-    func turnOff() {
-        
-        if isRunning {
-            
-            isRunning = false
-            print("put put silence")
-        } else {
-            
-            print("Already shut down!")
-        }
+    
+    init(isRunning: Bool, make: String, model: String) {
+        self.isRunning = isRunning
+        self.make = make
+        self.model = model
     }
     
     func blowAirHorn() {
@@ -85,21 +75,21 @@ class SemiTruck: Vehicle {
 }
 
 
-var car1 = SportsCar()
-var truck1 = SemiTruck()
+var car1 = SportsCar(isRunning: false, make: "Porsche", model: "911")
+var truck1 = SemiTruck(isRunning: false, make: "Peterbuilt", model: "Verago")
 
 car1.start()
 truck1.start()
 truck1.blowAirHorn()
 
 car1.turnOff()
-//truck1.turnOff()
+truck1.turnOff()
 
 var vehicleArray: Array<Vehicle> = [car1, truck1]
 
 
 for v in vehicleArray {
-    print("\(v)")
+    print("\(v.makeModel)")
     
     if let v = v as? SemiTruck {
         v.blowAirHorn()
