@@ -1,0 +1,37 @@
+{
+  "properties" : {
+    "duration" : 15,
+    "duration-type" : "fps",
+    "repetitions" : 0
+  },
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "frames" : [
+    {
+      "filename" : "AndroidPeek1.png"
+    },
+    {
+      "filename" : "AndroidPeek2.png"
+    },
+    {
+      "filename" : "AndroidPeek3.png"
+    },
+    {
+      "filename" : "AndroidPeek4.png"
+    },
+    {
+      "filename" : "AndroidPeek5.png"
+    },
+    {
+      "filename" : "AndroidPeek6.png"
+    },
+    {
+      "filename" : "AndroidPeek7.png"
+    },
+    {
+      "filename" : "AndroidPeek8.png"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "stickers" : [
+    {
+      "filename" : "Swift.sticker"
+    },
+    {
+      "filename" : "1.sticker"
+    },
+    {
+      "filename" : "2.sticker"
+    },
+    {
+      "filename" : "3.sticker"
+    },
+    {
+      "filename" : "4.sticker"
+    },
+    {
+      "filename" : "5.sticker"
+    },
+    {
+      "filename" : "6.sticker"
+    },
+    {
+      "filename" : "7.sticker"
+    },
+    {
+      "filename" : "8.sticker"
+    },
+    {
+      "filename" : "9.sticker"
+    },
+    {
+      "filename" : "10.sticker"
+    },
+    {
+      "filename" : "11.sticker"
+    },
+    {
+      "filename" : "12.sticker"
+    },
+    {
+      "filename" : "Sticker Sequence.stickersequence"
+    },
+    {
+      "filename" : "MarkRap.sticker"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "properties" : {
+    "grid-size" : "regular"
+  }
+}
