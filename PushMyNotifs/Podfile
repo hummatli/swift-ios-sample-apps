@@ -6,6 +6,7 @@ target 'PushMyNotifs' do
   use_frameworks!
 
   # Pods for PushMyNotifs
-  pod 'Firebase/Core'
+  pod 'Firebase/Core', '~> 3.3.0'
+  pod 'Firebase/Messaging', '~> 3.3.0'
 
 end
